@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="rent copier,copiers for rent,copier machine rentals,photocopier machine Singapore,copier rental Singapore,copier for rental,rental copier machine,">
+<meta name="description" content="Affordable copier machine rentals for businesses with flexible plans, reliable machines, and expert support to keep your office running smoothly.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="">
+<meta name="robots" content="index, follow">
+<title>Copier Rental Services - Warm Palette</title>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; line-height: 1.5; background: #fff9f4; color: #5a3e1b; }
+  a { color: inherit; }
+
+  header {
+    background: #ff921c;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Needed for absolute nav on mobile */
+  }
+  /* Hamburger burger button */
+  .burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    position: absolute;
+    left: 1rem;
+    top: 1.1rem;
+  }
+  /* Push logo right to clear burger */
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex; /* horizontal nav by default */
+    gap: 1.5rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover { color: #fae5d3; }
+
+  #contact-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #f9a825;
+    color: #4a2f01;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #contact-btn:hover { background: #faab49; }
+
+  main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  h1 {
+    text-align: center;
+    color: #bb6a08;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  article {
+    background: #fff4e8;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #e1b382;
+    margin-bottom: 2rem;
+    color: #5a3e1b;
+    text-align: justify;
+  }
+  article h2 { font-weight: bold; margin-bottom: 0.5rem; }
+  article img {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+
+  .boxes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .box {
+    background: #ffe3b1;
+    color: #7a4e0f;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ffcc66;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .box:hover {
+    background-color: #ffb74d;
+    color: #3e2a00;
+  }
+
+  .map-container {
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    margin: 3rem auto 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 12px #dda451;
+  }
+
+  section.faq {
+    max-width: 1000px;
+    margin: 3rem auto;
+  }
+  section.faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #bb6a08;
+  }
+  details {
+    background: #fff4e8;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 0 8px #dbb37c;
+    cursor: pointer;
+  }
+  details[open] {
+    box-shadow: 0 0 12px #bb6a08;
+  }
+  summary {
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+  }
+  details p {
+    margin-top: 0.75rem;
+    font-weight: 400;
+  }
+
+  footer {
+    background: #bb6a08;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .section {
+    flex: 1 1 220px;
+  }
+  .section h3 {
+    border-bottom: 2px solid #f9a825;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .section ul {
+    list-style: none;
+  }
+  .section ul li {
+    margin: 0.4rem 0;
+  }
+  .section ul li a {
+    color: #fff3d6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .section ul li a:hover {
+    color: #fff9e1;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+
+    header .logo {
+      margin-left: 40px; /* leave space for burger */
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 0;
+      background-color: #ff921c;
+      position: absolute;
+      top: 56px;
+      left: 0;
+      width: 100%;
+      display: none;
+      z-index: 100;
+      border-top: 1px solid #e58d05;
+    }
+
+    nav ul.show {
+      display: flex;
+    }
+
+    nav ul li {
+      border-bottom: 1px solid #e58d05;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav ul li a {
+      font-size: 18px;
+    }
+
+    .boxes-container {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .section {
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="burger" id="burger" aria-label="Menu" role="button" tabindex="0">&#9776;</div>
+  <div class="logo">Photocopier machine Singapore</div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="https://www.copierpc.com.sg/">Home</a></li>
+      <li><a href="https://www.copierpc.com.sg/blog/">Blog</a></li>
+      <li><a href="https://www.copierpc.com.sg/about-us/">About Us</a></li>
+      <li><a href="https://www.copierpc.com.sg/services/">Services</a></li>
+      <li><a href="https://www.copierpc.com.sg/it-products/">Products</a></li>
+    </ul>
+  </nav>
+</header>
+
+<button id="contact-btn" aria-label="Contact Us" title="Contact Us" onclick="contactClicked()">📞</button>
+
+<main>
+  <h1>Top Rated Copier Rental in Singapore</h1>
+
+  <article>
+    <img src="https://www.copierpc.com.sg/wp-content/uploads/2022/02/4-1.png" alt="Copier Machine Rental" />
+    <p>Looking to <strong><a href="https://www.copierpc.com.sg/copier-rental/" target="_blank" rel="dofollow">copier machine rentals</a></strong> or photocopy machine in Singapore? At CPC Solution, we’ve got you covered! We offer hassle-free copier rental services across the island from offices near Marina Bay Sands to heartland businesses. When you rent a copier machine in Singapore, the biggest advantage is the maintenance and support services included in the rental plan. This means you don’t have to worry about breakdowns or extra repair costs.
+
+Our copier rental plans start from just $90/month, making it affordable for any business. Choose from top brands like Canon, FujiFilm, Ricoh, Brother and Konica Minolta to keep your office running smoothly.
+
+Whether you need short-term or long-term rental, we provide reliable machines, quick setup, and expert support.
+
+Flexible rental plans
+Daily, weekly, monthly or long-term
+Free delivery & installation
+Anywhere in Singapore
+Best technical support
+With 4-hour response time
+No hidden costs
+</p>
+  </article>
+
+  <article>
+    <h2>Why is CPC Solution the Best Photocopy Machine Rental and also Supplier in Singapore?</h2>
+    <p>Welcome to CPC Solution your trusted partner for premium office solutions in Singapore. Since our inception, we’ve been committed to delivering reliable, cost-effective copier and IT equipment services that help businesses work smarter and more efficiently.</p>
+    <h2>Who We Are</h2>
+    <p>At CPC, we believe that there is always a versatile approach customized for every individual company, and that a win-win solution is possible for everyone. With a wide variety of new and reconditioned multifunction copier machines from leading brands such as Fujifilm, Canon, Epson and HP, we’re well-equipped to provide office solutions that suit your printing requirements perfectly—at an affordable price.</p>
+    <p>We specialize in the sales, rental, and maintenance of office copiers, printers, and IT hardware. Whether you're a growing startup, a mid-sized business, or an established enterprise, our solutions are designed to scale with you.</p>
+    <h2>Our Unique Philosophy</h2>
+    <p>It’s a universal belief that most people just want to be happy in their lives. Yet, research shows we’re often poor at predicting what actually brings lasting happiness. Backed by findings from the fields of positive psychology and the science of happiness, we've learned that there are tangible, evidence-based ways to enhance well-being—both personally and professionally.</p>
+  </article>
+
+  <article>
+    <h2>Maintenance and Support</h2>
+    <p>Comprehensive maintenance and quick support keep your business running smoothly with minimal downtime.</p>
+    <p>That’s where CPC Solution comes in.
+
+We exist not only to optimize office operations, but also to help people, organizations, and businesses apply practical frameworks of happiness to their lives and workplaces. Because when people thrive, companies thrive.</p>
+  </article>
+
+  <div class="boxes-container">
+    <a href="https://www.copierpc.com.sg/copier-rental/" style="text-decoration: none; color: inherit;">
+      <div class="box">Copier Rental Plans</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/colour-copiers/" style="text-decoration:none; color:inherit;">
+      <div class="box">Colour Copier Options</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/service-request/" style="text-decoration:none; color:inherit;">
+      <div class="box">Emergency Service</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/copier/" style="text-decoration:none; color:inherit;">
+      <div class="box">Canon Copier</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/copier/" style="text-decoration:none; color:inherit;">
+      <div class="box">FujiFilm Copier</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/services-ad-hoc-maintenance/" style="text-decoration:none; color:inherit;">
+      <div class="box">AD-HOC Service</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/buy-copier/" style="text-decoration:none; color:inherit;">
+      <div class="box">Buy Copier</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/copier-disposal-service/" style="text-decoration:none; color:inherit;">
+      <div class="box">Copier Disposal Service</div>
+    </a>
+
+    <a href="https://www.copierpc.com.sg/computer-network-configuration-service/" style="text-decoration:none; color:inherit;">
+      <div class="box">Configuration Service</div>
+    </a>
+  </div>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.655738119829!2d103.88877601531998!3d1.3178202993862556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19ab0b3de735%3A0xd6593e01f0869238!2sCPC%20Solution%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1695314700000!5m2!1sen!2ssg" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Where can I find reliable FujiFilm printer rentals in Singapore?</summary>
+      <p>We recommend contacting CPC Solution for trusted FujiFilm printer rentals and services.</p>
+    </details>
+    <details>
+      <summary>Does CPC Solution provide copier machine services in Singapore?</summary>
+      <p>Yes, CPC Solution offers comprehensive copier machine rental and support services.</p>
+    </details>
+    <details>
+      <summary>Can I rent a high-quality photo printer in Singapore?</summary>
+      <p>High-quality printers are available for rent from CPC Solution, suitable for photo and office use.</p>
+    </details>
+    <details>
+      <summary>What is the price for a Fuji Xerox printer rental in Singapore?</summary>
+      <p>Contact CPC Solution directly for a quick quote on Fuji Xerox printer rentals.</p>
+    </details>
+    <details>
+      <summary>How much does it cost to rent a copier in Singapore?</summary>
+      <p>Pricing varies by model and rental duration; request a quote from CPC Solution for specific rates.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="section">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="https://www.copierpc.com.sg/">Home</a></li>
+        <li><a href="https://www.copierpc.com.sg/about-us/">About Us</a></li>
+        <li><a href="https://www.copierpc.com.sg/blog/">Blog</a></li>
+        <li><a href="https://www.copierpc.com.sg/contact-us/">Contact</a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Products</h3>
+      <ul>
+        <li><a href="https://www.copierpc.com.sg/copier/">Copier</a></li>
+        <li><a href="https://www.copierpc.com.sg/it-products/">IT Products</a></li>
+        <li><a href="https://www.copierpc.com.sg/drivers/">Drivers</a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="https://www.copierpc.com.sg/copier-rental/">Copier Rental</a></li>
+        <li><a href="https://www.copierpc.com.sg/seo-package/">SEO</a></li>
+        <li><a href="https://www.copierpc.com.sg/monday-com-integration/">Work OS</a></li>
+        <li><a href="https://www.copierpc.com.sg/ai-chatbots/">AI Automation</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+function contactClicked() {
+  const phone = "+6589662687";
+  const url = `https://wa.me/${phone.replace(/\D/g, '')}`;
+  window.open(url, "_blank");
+}
+
+function boxAction(n) {
+  alert("Clicked box #" + n + ". Customize this action.");
+}
+
+// Hamburger menu toggle
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+burger.addEventListener('keypress', (e) => {
+  if(e.key === 'Enter' || e.key === ' ') {
+    navLinks.classList.toggle('show');
+    e.preventDefault();
+  }
+});
+</script>
+
+</body>
+</html>
